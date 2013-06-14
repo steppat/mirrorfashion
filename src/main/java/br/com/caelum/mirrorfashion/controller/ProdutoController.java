@@ -4,7 +4,7 @@ import static br.com.caelum.vraptor.view.Results.jsonp;
 
 import java.util.List;
 
-import br.com.caelum.mirrorfashion.modelo.GeradorProdutos;
+import br.com.caelum.mirrorfashion.modelo.GeradorDeProdutos;
 import br.com.caelum.mirrorfashion.modelo.Produto;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Resource;
@@ -19,7 +19,7 @@ public class ProdutoController {
 	@Get("/produtos")
 	public void produtos(Result result, String callback) {
 
-		GeradorProdutos geradorProdutos = new GeradorProdutos();
+		GeradorDeProdutos geradorProdutos = new GeradorDeProdutos();
 
 		List<Produto> produtos = geradorProdutos.geraProdutos();
 

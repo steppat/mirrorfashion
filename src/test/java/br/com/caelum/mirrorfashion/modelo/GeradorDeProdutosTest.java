@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class GeradorProdutosTest {
+public class GeradorDeProdutosTest {
 
 	@Test
 	public void deveSempreGerarTresProdutos() {
 
-		GeradorProdutos geradorProdutos = new GeradorProdutos();
+		GeradorDeProdutos geradorProdutos = new GeradorDeProdutos();
 
 		List<Produto> produtos = geradorProdutos.geraProdutos();
 		
