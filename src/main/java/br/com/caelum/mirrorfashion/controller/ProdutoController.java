@@ -24,6 +24,10 @@ public class ProdutoController {
 		List<Produto> produtos = geradorProdutos.geraProdutos();
 
 		JSONPSerialization serialization = result.use(jsonp());
+		
+		if (!callback.matches("[a-z A-Z_0-9]*")) {
+			callback="";
+		}
 
 		serialization.withCallback(callback).from(produtos, "produtos")
 				.serialize();
