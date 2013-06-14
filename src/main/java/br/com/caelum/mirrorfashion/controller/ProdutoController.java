@@ -23,8 +23,6 @@ public class ProdutoController {
 
 		List<Produto> produtos = geradorProdutos.geraProdutos();
 
-		System.out.println(callback);
-
 		JSONPSerialization serialization = result.use(jsonp());
 
 		serialization.withCallback(callback).from(produtos, "produtos")
