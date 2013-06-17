@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GeradorProdutos {
+public class GeradorDeProdutos {
 
 	public List<Produto> geraProdutos() {
 
@@ -20,11 +20,11 @@ public class GeradorProdutos {
 				"img/produto-6.jpg");
 
 		List<Produto> produtos = new ArrayList<Produto>();
-		
+
 		produtos.add(produto1);
 		produtos.add(produto2);
 		produtos.add(produto3);
-		
+
 		Collections.shuffle(produtos);
 
 		return produtos;
